@@ -3,6 +3,7 @@ export default async function handler() {
   const data = await res.json();
 
   return new Response(JSON.stringify(data), {
-    headers: { "Content-Type": "application/json" }
+    status: 200,
+    headers: { "Content-Type": "application/json" },
   });
 }
