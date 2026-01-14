@@ -1,0 +1,28 @@
+first run: 
+    npm install
+then : 
+    npm run build
+this build common folders
+
+step 2: Push Code to GitHub
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git branch -M main
+    git remote add origin https://github.com/USERNAME/REPO_NAME.git
+    git push -u origin main
+
+STEP 3: Deploy on Vercel (No CLI Needed)
+
+    Go to 👉 https://vercel.com
+    Click Sign up → choose GitHub
+    Click New Project
+    Select your GitHub repository
+    Vercel auto-detects everything ⚡
+    If using React / Vite:
+    Framework preset: Auto
+    Build command: auto-filled
+    Output directory:
+    Vite → dist
+    CRA → build
+
