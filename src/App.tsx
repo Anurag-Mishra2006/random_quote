@@ -13,8 +13,8 @@ function App() {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const res = await axios.get("/api/random")
-        const res2 = await axios.get("/api/quotes")
+        const res = await axios.get("/api/random.ts")
+        const res2 = await axios.get("/api/quotes.ts")
 
         setQuote(res.data[0].q)
         setQuotes(res2.data)
